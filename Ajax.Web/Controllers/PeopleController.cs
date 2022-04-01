@@ -37,6 +37,7 @@ namespace Ajax.Web.Controllers
             return Json(id);
             
         }
+        [HttpPost]
         public IActionResult Edit(Person person)
         {
             var repo = new PeopleRepository(_connectionString);
